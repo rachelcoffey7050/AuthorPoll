@@ -22,7 +22,7 @@ For this deliverable I did the following. I checked the box `[x]` and added a de
 - [x] Proper use of Markdown
 - [x] A concise and compelling elevator pitch
 - [x] Description of key features
-- [ ] Description of how you will use each technology
+- [x] Description of how you will use each technology
 - [ ] One or more rough sketches of your application. Images must be embedded in this file using Markdown image references.
 
 ### Elevator pitch
@@ -59,12 +59,12 @@ sequenceDiagram
 
 I am going to use the required technologies in the following ways.
 
-- **HTML** - Create the structure. I will need at least 3 pages. One for all the polls, a login page, and a page for an induvidual poll. Use hyperlinks for poll choices.
-- **CSS** - Use to style the website and polls
-- **React** - Provides login and choice display, applies votes, displays other users votes, and use of React for routing and components.
-- **Service** - the login, retrieving polls, submitting polls, submitting votes, retrieving vote status, submitting comments, retreiving comments
-- **DB/Login** - stores users, polls, votes, comments. Registers and logs in users.
-- **WebSocket** - When a user votes or comments, their action can be seen by all users.
+- **HTML** - Create the structure. I will need at least 2 pages. One for all the polls and a login page. I will possibly need another page for an induvidual poll. Use hyperlinks for poll choices.
+- **CSS** - Use to style the website and polls in a clean format. Ensure the app works on different screen sizes.
+- **React** - Used to display list of polls, poll results, comments under each poll, and login form. Allows users to interact with application including navigation to induvidual poll and clicking on desired choice. Provides a form for poll creation.
+- **Service** - provides endpoints for the login, retrieving polls, submitting polls, submitting votes, retrieving vote status, submitting comments, retreiving comments, etc.
+- **DB/Login** - stores users, polls, votes, comments. Registers and logs in users with secure passwords.
+- **WebSocket** - When a user votes, comments, or creates a new poll, their action can be seen by all users.
 
 ## 🚀 AWS deliverable
 
