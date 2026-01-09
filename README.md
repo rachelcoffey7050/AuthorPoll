@@ -39,7 +39,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 sequenceDiagram
     actor You
     actor Me
-    actor Server
     You->>Server: Poll
     Server-->>Me: Poll
     Me->>Server: Vote
