@@ -32,9 +32,9 @@ Are you a writer who is waffling between two options? Are you not sure what to n
 ### Design
 Here is a basic representation of the design. It will also include a login page and a poll creation page. 
 
-<img width="330" alt="writerspollmockup page1" src="https://github.com/user-attachments/assets/534ec027-f36d-4746-9bd9-3a25ee889d1d" />
-<img width="330" alt="writerspollmockup page2" src="https://github.com/user-attachments/assets/2cd9f329-dcc7-4fc0-af17-2860da21f1e8" />
-<img width="330" alt="writerspollmockup page3" src="https://github.com/user-attachments/assets/199f23af-ca48-46d4-87b2-e533b1cdc3fc" />
+<img width="300" alt="writerspollmockup page1" src="https://github.com/user-attachments/assets/534ec027-f36d-4746-9bd9-3a25ee889d1d" />
+<img width="300" alt="writerspollmockup page2" src="https://github.com/user-attachments/assets/2cd9f329-dcc7-4fc0-af17-2860da21f1e8" />
+<img width="300" alt="writerspollmockup page3" src="https://github.com/user-attachments/assets/199f23af-ca48-46d4-87b2-e533b1cdc3fc" />
 
 Here is a sequence diagram that shows how users interact with the backend.
 
