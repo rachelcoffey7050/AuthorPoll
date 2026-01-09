@@ -23,15 +23,18 @@ For this deliverable I did the following. I checked the box `[x]` and added a de
 - [x] A concise and compelling elevator pitch
 - [x] Description of key features
 - [x] Description of how you will use each technology
-- [ ] One or more rough sketches of your application. Images must be embedded in this file using Markdown image references.
+- [x] One or more rough sketches of your application. Images must be embedded in this file using Markdown image references.
 
 ### Elevator pitch
 
 Are you a writer who is waffling between two options? Are you not sure what to name a character or location and looking to get feedback? Writerspoll allows users to create and share polls to the public and recieve quick responses. Become part of a community of creatives and vote to help others out.
 
 ### Design
+Here is a basic representation of the design. It will also include a login page and a poll creation page. 
 
-![Design image](placeholder.png)
+<img width="330" alt="writerspollmockup page1" src="https://github.com/user-attachments/assets/534ec027-f36d-4746-9bd9-3a25ee889d1d" />
+<img width="330" alt="writerspollmockup page2" src="https://github.com/user-attachments/assets/2cd9f329-dcc7-4fc0-af17-2860da21f1e8" />
+<img width="330" alt="writerspollmockup page3" src="https://github.com/user-attachments/assets/199f23af-ca48-46d4-87b2-e533b1cdc3fc" />
 
 Here is a sequence diagram that shows how users interact with the backend.
 
