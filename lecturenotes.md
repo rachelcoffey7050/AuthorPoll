@@ -60,5 +60,34 @@ vi/vim is on everyone's computers. Important to know.
 # Server
 Tech stack
 
+## Jan 15
+Upgrade to paid plan in AWS
+
+### How does the internet work?
+user, facilitator, website
+Layers
+- Application (HTTPS or SSH) - functionality like web browsing
+- Transport (TCP/UDP) - packet delivery (make sure they get there and get there in order) UDP is fast (good for streaming), TCP will get everything correct
+- Internet (IP) - Establishing connections, routing
+- Link (Fiber, Hardware) physical connections
+
+When you connect, you look up the IP address and it looks up address in domain name list. You are also talking to the webserver to actally get you to the correct address. 
+
+Use nslookup (your website) to look for more info. And there is a command that starts with who, and dns
+
+**Domain names:** subdomain.secondary.top. Root is secondary (sld) and top (tld). localhost (127.0.0.1) - talking to yourself.
+
+DNS record type - basically you can control where things will take you
+- A/AAAA - AAAA has a lot more than A. It brings you directly to the site.
+- CNAME - an alias that brings you to something else before bringing you to an IP address.
+
+Different organizations own the top level domain, and you are leasing from them
+
+**Renting a Sever:** EC2 -> instances -> launch an instance. Name it something specific like byu-cs260-webserver. Follow the instructions. Make sure you are in N Virginia. 
+network settings - allow SSH, allow traffic from the internet.
+
+Caddy - looks at the request and decides where it should go. Set up for on port 4000 it goes to startup and port 3000 it goes to simon. TELL IT WHAT YOUR DOMAIN NAME IS. 'your domain name here'
+
+HTTPS - you need a host name. But Caddy takes care of everything else for you.
 
 
