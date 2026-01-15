@@ -88,6 +88,6 @@ network settings - allow SSH, allow traffic from the internet.
 
 Caddy - looks at the request and decides where it should go. Set up for on port 4000 it goes to startup and port 3000 it goes to simon. TELL IT WHAT YOUR DOMAIN NAME IS. 'your domain name here'
 
-HTTPS - you need a host name. But Caddy takes care of everything else for you.
+HTTPS - you need a host name. But Caddy takes care of everything else for you. sudo service restart or something like that.
 
 
