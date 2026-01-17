@@ -10,8 +10,9 @@
 
 ## AWS
 
-My IP address is: 54.81.96.130
-Launching my AMI I initially put it on a private subnet. Even though it had a public IP address and the security group was right, I wasn't able to connect to it.
+My Publlic elastic IP address is: 3.94.41.68
+This is the command to ssh into the server. Remember to be in the correct directory rache@RachelPC MINGW64 /c/cs260
+$ ssh -i rachel-cs260-key.pem ubuntu@107.23.18.145
 
 ## Caddy
 
