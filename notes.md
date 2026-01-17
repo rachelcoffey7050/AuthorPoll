@@ -12,13 +12,13 @@
 
 My Publlic elastic IP address is: 3.94.41.68
 This is the command to ssh into the server. Remember to be in the correct directory. rache@RachelPC MINGW64 /c/cs260
-$ ssh -i rachel-cs260-key.pem ubuntu@107.23.18.145
+$ ssh -i rachel-cs260-key.pem ubuntu@3.94.41.68
 
 The domain for my website is [storypolls.click](http://storypolls.click)
 
 ## Caddy
 
-No problems worked just like it said in the [instruction](https://github.com/webprogramming260/.github/blob/main/profile/webServers/https/https.md).
+After getting stuck on caddy for more than an hour because of some mysterious timeout issue that I, copilot, and a TA were all helpless to solve, I got a new EC2 instance that was micro instead of nano. That resolved the problem. Unfortunately, it is twice as expensive, but at least it works lol.
 
 ## HTML
 
