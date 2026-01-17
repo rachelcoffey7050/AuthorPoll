@@ -6,7 +6,7 @@ This application, in minimum viability, allows users to make polls which can be 
 
 I saw something similar done for [baby names](https://www.babynamegenie.com/polls) and wondered if there was an author's version. From what I can tell, there isn't. This is a good opportunity to change that!
 
- [Markdown Documentation](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) before continuing.
+ [Markdown Documentation](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
 ## 🚀 Specification Deliverable
 
