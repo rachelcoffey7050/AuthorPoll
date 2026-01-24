@@ -1,67 +1,80 @@
-# AuthorPoll
+# WritersPoll
 
 [My Notes](notes.md)
 
-A brief description of the application here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+This application, in minimum viability, allows users to make polls which can be voted or commented on by the public. It is primarily targeted at fiction writers seeking quick feedback and community.
 
-> [!NOTE]
-> This is a template for your startup application. You must modify this `README.md` file for each phase of your development. You only need to fill in the section for each deliverable when that deliverable is submitted in Canvas. Without completing the section for a deliverable, the TA will not know what to look for when grading your submission. Feel free to add additional information to each deliverable description, but make sure you at least have the list of rubric items and a description of what you did for each item.
+I saw something similar done for [baby names](https://www.babynamegenie.com/polls) and wondered if there was an author's version. From what I can tell, there isn't. This is a good opportunity to change that!
 
-> [!NOTE]
-> If you are not familiar with Markdown then you should review the [documentation](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) before continuing.
+ [Markdown Documentation](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
 ## 🚀 Specification Deliverable
 
-> [!NOTE]
-> Fill in this sections as the submission artifact for this deliverable. You can refer to this [example](https://github.com/webprogramming260/startup-example/blob/main/README.md) for inspiration.
+[Example Startup](https://github.com/webprogramming260/startup-example/blob/main/README.md)
 
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
 
-- [ ] Proper use of Markdown
-- [ ] A concise and compelling elevator pitch
-- [ ] Description of key features
-- [ ] Description of how you will use each technology
-- [ ] One or more rough sketches of your application. Images must be embedded in this file using Markdown image references.
+- [x] Proper use of Markdown
+- [x] A concise and compelling elevator pitch
+- [x] Description of key features
+- [x] Description of how you will use each technology
+- [x] One or more rough sketches of your application. Images must be embedded in this file using Markdown image references.
 
 ### Elevator pitch
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Are you a writer who is waffling between two options? Are you not sure what to name a character or location and looking to get feedback? Writerspoll allows users to create and share polls to the public and recieve quick responses. Become part of a community of creatives and vote to help others out.
 
 ### Design
+Here is a basic representation of the design. It will also include a login page and a poll creation page. 
 
-![Design image](placeholder.png)
+<img width="300" alt="writerspollmockup page1" src="https://github.com/user-attachments/assets/534ec027-f36d-4746-9bd9-3a25ee889d1d" />
+<img width="300" alt="writerspollmockup page2" src="https://github.com/user-attachments/assets/2cd9f329-dcc7-4fc0-af17-2860da21f1e8" />
+<img width="300" alt="writerspollmockup page3" src="https://github.com/user-attachments/assets/199f23af-ca48-46d4-87b2-e533b1cdc3fc" />
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Here is a sequence diagram that shows how users interact with the backend.
 
 ```mermaid
 sequenceDiagram
     actor You
-    actor Website
-    You->>Website: Replace this with your design
+    actor Me
+    You->>Server: Poll
+    Server-->>Me: Poll
+    Me->>Server: Vote
+    Me->>Server: Comment
+    Server-->>You: Vote
+    Server-->>You: Comment
+    
 ```
 
 ### Key features
 
-- Describe your key feature
-- Describe your key feature
-- Describe your key feature
+- Option to login
+- Page with all the polls and ability to choose one
+- Ability to choose desired option in poll
+- abiltiy to sumbit answer
+- ability to change answer before pressing sumbit
+- once submitted, see totals from all participants
+- totals update in real time
+- ability to comment
+- able to see comments from other users, updated in real time
+- ability to create a poll, which is posted to list of polls
 
 ### Technologies
 
 I am going to use the required technologies in the following ways.
 
-- **HTML** - Description here
-- **CSS** - Description here
-- **React** - Description here
-- **Service** - Description here
-- **DB/Login** - Description here
-- **WebSocket** - Description here
+- **HTML** - Create the structure. I will need at least 2 pages. One for all the polls and a login page. I will possibly need another page for an induvidual poll. Use hyperlinks for poll choices.
+- **CSS** - Use to style the website and polls in a clean format. Ensure the app works on different screen sizes.
+- **React** - Used to display list of polls, poll results, comments under each poll, and login form. Allows users to interact with application including navigation to induvidual poll and clicking on desired choice. Provides a form for poll creation.
+- **Service** - provides endpoints for the login, retrieving polls, submitting polls, submitting votes, retrieving vote status, submitting comments, retreiving comments, etc.
+- **DB/Login** - stores users, polls, votes, comments. Registers and logs in users with secure passwords.
+- **WebSocket** - When a user votes, comments, or creates a new poll, their action can be seen by all users.
 
 ## 🚀 AWS deliverable
 
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
 
-- [ ] **Server deployed and accessible with custom domain name** - [My server link](https://yourdomainnamehere.click).
+- [x] **Server deployed and accessible with custom domain name** - [storypolls](https://storypolls.click).
 
 ## 🚀 HTML deliverable
 
