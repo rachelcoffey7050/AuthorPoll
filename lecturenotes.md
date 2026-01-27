@@ -90,4 +90,33 @@ Caddy - looks at the request and decides where it should go. Set up for on port 
 
 HTTPS - you need a host name. But Caddy takes care of everything else for you. sudo service restart or something like that.
 
+## Jan 27
 
+### Responsive Design
+
+CSS controls the entire layout. This needs to respond to different sizes/shapes of devices. So CSS was enhanced to be more responsive. 
+- `<meta name="viewport" content="width+device-width, initial-scale=1"/>` this is in the head to keep it from auto adjusting
+- `aside {float:right;}` making something just float on the right of the screen. It stays the same size as the screen size changes
+- `display` Display none will hide the element.
+  - Can also display as flex - flexible for children: grow (to satisfy the fr you specify), shrink, basis(ideal - could be pixels or a percent)
+  - grid (you tell it how to organize children, specifically for boxes),
+  - inline (won't resize),
+  - block (fits screen), etc.
+- `<div> class="card" </div>` - tag just tells you what it is so you can accesss it with the CSS.
+
+**media queries**
+```
+@ media (orientation: portrait) {
+  div {
+    transform: rotate(270deg);
+  }
+}
+```
+So depending on the size it will have different properties.
+
+Bootstrap
+- import bootstrap CSS
+- ` class ="btn btn-outline-primary"`
+- you have to know the class you're importing, but other than that just import.
+- Some of the bootstrap stuff requires javascript which requires an extra import.
+- 
